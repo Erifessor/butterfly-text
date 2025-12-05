@@ -176,8 +176,8 @@
       <!-- 结果区域 (初始隐藏) -->
       <div id="result-area" class="hidden">
         <div class="bg-primary/10 rounded-2xl p-6 flex flex-col items-center justify-center h-64 mb-6">
-          <img id="result-emoji" class="w-24 h-24 mb-4 float-animation" src="image/pig.png" alt="猪">
-          <h2 id="result-title" class="text-2xl font-bold text-gray-800 mb-2">猪</h2>
+          <img id="result-emoji" class="w-24 h-24 mb-4 float-animation" src="image/pig.png" alt="鸟">
+          <h2 id="result-title" class="text-2xl font-bold text-gray-800 mb-2">鸟</h2>
           <p id="result-description" class="text-gray-600">
             你是一只可爱的小鸟！
           </p>
@@ -206,7 +206,7 @@
         id: "human",
         name: "人类",
         emoji: "👤",
-        description: "检测不出猪元素，是人类吗？",
+        description: "检测不出鸟元素，是人类吗？",
         analysis: ""
       },
       {
@@ -412,7 +412,7 @@
       
       // 恢复视觉效果
       testArea.classList.remove('scale-105');
-      instruction.textContent = '将手指放到屏幕中间区域，长按汲取猪元素';
+      instruction.textContent = '将手指放到屏幕中间区域，长按汲取鸟元素';
     }
     
     // 更新进度条
@@ -466,7 +466,7 @@
         alert('生成结果失败，请重试！');
         // 重置界面
         resetProgress();
-        instruction.textContent = '长按屏幕中间区域，看看你是什么猪！';
+        instruction.textContent = '长按屏幕中间区域，看看你是什么鸟！';
       }
     }
     
@@ -549,7 +549,7 @@
         resultArea.classList.add('hidden');
         
         // 重置提示文字
-        instruction.textContent = '长按屏幕中间区域，看看你是什么猪！';
+        instruction.textContent = '长按屏幕中间区域，看看你是什么鸟！';
       } catch (error) {
         console.error('重新测试失败:', error);
       }
